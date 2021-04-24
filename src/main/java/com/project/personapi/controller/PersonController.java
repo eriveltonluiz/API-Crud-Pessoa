@@ -18,19 +18,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.project.personapi.dto.request.PersonDTO;
 import com.project.personapi.exception.PersonNotFoundException;
-import com.project.personapi.model.Person;
 import com.project.personapi.service.PersonService;
+
+import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/api/v1/person")
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 	
 	private PersonService personService;
 	
-	@Autowired
-	public PersonController(PersonService personService) {
-		this.personService = personService;
-	}
+//	@Autowired
+//	public PersonController(PersonService personService) {
+//		this.personService = personService;
+//	}
 	
 	@GetMapping
 	public ResponseEntity<List<PersonDTO>> listAll(){
