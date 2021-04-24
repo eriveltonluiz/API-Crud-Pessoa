@@ -1,6 +1,6 @@
-<h2>Digital Innovation: Expert class - Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
+<h2>Desenvolvendo um CRUD de pessoas em API REST com Spring Boot</h2>
 
-Nesta live coding vamos desenvolver um pequeno sistema para o gerenciamento de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
+Nesta projeto é desenvolvido um pequeno sistema para o gerenciamento de um CRUD de pessoas de uma empresa através de uma API REST, criada com o Spring Boot.
 
 Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
 
@@ -10,6 +10,11 @@ Durante a sessão, serão desenvolvidos e abordados os seguintes tópicos:
 * Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
 * Desenvolvimento de testes unitários para validação das funcionalidades
 * Implantação do sistema na nuvem através do Heroku
+
+Métodos para GET e POST
+```
+https://apirest-pessoa-live.herokuapp.com/api/v1/person
+```
 
 Para executar o projeto no terminal, digite o seguinte comando:
 
