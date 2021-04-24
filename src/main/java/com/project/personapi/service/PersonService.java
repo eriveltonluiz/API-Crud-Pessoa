@@ -12,17 +12,20 @@ import com.project.personapi.mapper.PersonMapper;
 import com.project.personapi.model.Person;
 import com.project.personapi.repository.PersonRepository;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
 	private PersonRepository personRepository;
 
 	private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
-	@Autowired
-	public PersonService(PersonRepository personRepository) {
-		this.personRepository = personRepository;
-	}
+//	@Autowired
+//	public PersonService(PersonRepository personRepository) {
+//		this.personRepository = personRepository;
+//	}
 
 	public PersonDTO savePerson(PersonDTO personDTO) {
 		Person personToSave = personMapper.toModel(personDTO);
